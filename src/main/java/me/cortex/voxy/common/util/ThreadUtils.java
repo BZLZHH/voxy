@@ -23,8 +23,8 @@ public class ThreadUtils {
         }
 
         if (Platform.get() == Platform.LINUX) {
-            var libc = APIUtil.apiCreateLibrary("libc.so.6");
-            schedSetaffinity = APIUtil.apiGetFunctionAddress(libc, "sched_setaffinity");
+            //var libc = APIUtil.apiCreateLibrary("libc.so.6");
+            schedSetaffinity = 0;// APIUtil.apiGetFunctionAddress(libc, "sched_setaffinity");
         } else {
             schedSetaffinity = 0;
         }
