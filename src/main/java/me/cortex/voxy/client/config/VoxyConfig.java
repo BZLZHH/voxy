@@ -27,7 +27,7 @@ public class VoxyConfig {
     public boolean enableRendering = true;
     public boolean ingestEnabled = true;
     public int sectionRenderDistance = 16;
-    public int serviceThreads = (int) Math.max(CpuLayout.getCoreCount()/1.5, 1);
+    public int serviceThreads = 8;
     public float subDivisionSize = 64;
     public boolean useEnvironmentalFog = true;
     public boolean dontUseSodiumBuilderThreads = false;
