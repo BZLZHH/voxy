@@ -158,6 +158,7 @@ public class CpuLayout {
     }
 
     public static int getCoreCount() {
+        return 8;
         if (CORES==null) {
             return Runtime.getRuntime().availableProcessors();
         } else {
