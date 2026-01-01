@@ -60,7 +60,7 @@ public class VoxyConfigMenu implements ConfigEntryPoint {
                                         "voxy:thread_count",
                                         Component.translatable("voxy.config.general.serviceThreads"),
                                         ()->CFG.serviceThreads, v->CFG.serviceThreads=v,
-                                        new Range(1, CpuLayout.getCoreCount(), 1))
+                                        new Range(1, 8, 1))
                                         .setPostChangeFlags("voxy:update_threads"),
                                 new BoolOption(
                                         "voxy:use_sodium_threads",
